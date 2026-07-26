@@ -1,0 +1,54 @@
+{
+  "entities": {
+    "Worker": {
+      "title": "Worker",
+      "description": "Company worker profile",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "color": { "type": "string" },
+        "code": { "type": "string" }
+      },
+      "required": ["id", "name", "role", "color"]
+    },
+    "ShiftPreset": {
+      "title": "ShiftPreset",
+      "description": "Shift template preset",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "startTime": { "type": "string" },
+        "endTime": { "type": "string" },
+        "hours": { "type": "number" },
+        "color": { "type": "string" },
+        "category": { "type": "string" },
+        "priority": { "type": "string" }
+      },
+      "required": ["id", "title", "startTime", "endTime", "hours", "color"]
+    },
+    "Task": {
+      "title": "Task",
+      "description": "Assigned shift or task for a worker on a date",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "workerId": { "type": "string" },
+        "date": { "type": "string" },
+        "title": { "type": "string" },
+        "startTime": { "type": "string" },
+        "endTime": { "type": "string" },
+        "hours": { "type": "number" },
+        "category": { "type": "string" },
+        "priority": { "type": "string" },
+        "status": { "type": "string" },
+        "description": { "type": "string" },
+        "presetId": { "type": "string" },
+        "color": { "type": "string" }
+      },
+      "required": ["id", "workerId", "date", "title", "hours", "status"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Графік Роботи - Серпень",
+  "description": "Інтерактивний календар-графік на серпень з 5 працівниками (A, B, C, D, E) та можливістю призначення завдань.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
